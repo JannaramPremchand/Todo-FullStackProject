@@ -1,95 +1,58 @@
-.App {
+/* app.css */
+
+/* Variables */
+:root {
+  --primary-color: #4CAF50; /* Green */
+  --secondary-color: #FFC0CB; /* Pink */
+  --text-color: #000000; /* Black */
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: var(--text-color);
+}
+
+.container {
+  margin-top: 2em;
+}
+
+/* Form Styles */
+.form-field {
+  margin-bottom: 1em;
+}
+
+/* Card Styles */
+.card-content {
+  margin-bottom: 1em;
+}
+
+/* Table Styles */
+.table {
+  margin-top: 1em;
+}
+
+/* Modal Styles */
+.modal-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Buttons */
+.button-primary {
+  background-color: var(--primary-color);
   color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.main-problems-show {
-  display: flex;
-  flex-direction: row; 
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 2px;
-
-}
-
-@media (max-width: 800px) {
-  .main-problems-show {
-    flex-direction: column;
-  }
-}
-
-.full-problem-detail {
-  font-style: italic;
-  font-size: 25px;
-  font-weight: 400;
-  color: #282c34;
-  text-decoration: #282c34;
-  margin: 10px;
-  padding: 2px;
-
-}
-.nav-problems {
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #282c34;
-  font-weight: 600;
-  padding: 2px;
-}
-
-.nav-problems:hover {
-  background-color:yellow;
-  color: black;
-}
-
-.nav-addproblems{
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #282c34;
-  font-weight: 600;
-  padding: 2px;
-}
-
-.nav-addproblems:hover {
-  background-color: green;
-  color: aliceblue;
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
 }
